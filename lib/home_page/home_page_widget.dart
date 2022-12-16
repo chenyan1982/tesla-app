@@ -289,9 +289,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 child: InkWell(
                                   onTap: () async {
                                     if (FFAppState().onof) {
-                                      setState(() {});
+                                      setState(() {
+                                        FFAppState().onof = false;
+                                      });
                                     } else {
-                                      setState(() {});
+                                      setState(() {
+                                        FFAppState().onof = true;
+                                      });
                                     }
                                   },
                                   child: Container(
@@ -313,9 +317,13 @@ class _HomePageWidgetState extends State<HomePageWidget>
                                 child: InkWell(
                                   onTap: () async {
                                     if (FFAppState().onof) {
-                                      setState(() {});
+                                      setState(() {
+                                        FFAppState().onof = false;
+                                      });
                                     } else {
-                                      setState(() {});
+                                      setState(() {
+                                        FFAppState().onof = true;
+                                      });
                                     }
                                   },
                                   child: Container(
